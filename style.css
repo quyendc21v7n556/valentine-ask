@@ -53,13 +53,12 @@ body {
     padding: 15px;
 }
 
-/* 🔥 FIX CHÍNH NẰM Ở ĐÂY */
 .letter-window {
     width: 100%;
     max-width: 900px;
     height: 85vh;
 
-    padding: 120px 25px 30px 25px;
+    padding: 100px 25px 30px 25px;
 
     display: flex;
     flex-direction: column;
@@ -100,10 +99,7 @@ h1 {
 }
 
 p {
-    font-size: 22px;
-
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    font-size: 40px;
 }
 
 /* Cat */
