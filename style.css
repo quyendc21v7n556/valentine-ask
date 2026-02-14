@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -49,21 +53,29 @@ body {
     padding: 15px;
 }
 
+/* 🔥 FIX CHÍNH NẰM Ở ĐÂY */
 .letter-window {
     width: 100%;
     max-width: 900px;
-    max-height: 85vh;
-    padding: 140px 30px 30px 30px;
+    height: 85vh;
+
+    padding: 120px 25px 30px 25px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     background-image: url("window.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
+
     border-radius: 12px;
+
     overflow-y: auto;
+    overflow-x: hidden;
+
     transform: scale(1.2);
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
@@ -77,14 +89,21 @@ body {
 /* TEXT */
 h1 {
     font-size: 22px;
-    max-width: 85%;
+    max-width: 90%;
     line-height: 1.7;
     letter-spacing: 1px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     word-break: break-word;
+    white-space: normal;
 }
 
 p {
     font-size: 22px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Cat */
@@ -124,10 +143,12 @@ p {
     background-color: rgba(255, 240, 240, 0.6);
     border-radius: 12px;
     margin-top: 15px;
+
+    word-break: break-word;
 }
 
 /* ========================= */
-/* 📱 MOBILE OPTIMIZATION */
+/* 📱 MOBILE */
 /* ========================= */
 
 @media (max-width: 768px) {
@@ -141,29 +162,29 @@ p {
     }
 
     .letter-window {
-        padding: 100px 20px 25px 20px;
-        max-height: 90vh;
+        height: 90vh;
+        padding: 90px 15px 20px 15px;
     }
 
     h1 {
-        font-size: 16px;
+        font-size: 15px;
         max-width: 95%;
         line-height: 1.6;
     }
 
     p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .cat {
-        width: 120px;
+        width: 110px;
     }
 
     .btn {
-        width: 90px;
+        width: 80px;
     }
 
     .final-text {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
