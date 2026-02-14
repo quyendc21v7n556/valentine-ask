@@ -65,7 +65,15 @@ body {
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
-
+@media (max-width: 768px) {
+    .letter-window {
+        aspect-ratio: auto;
+        /* 👈 bỏ ratio trên mobile */
+        height: 80vh;
+        padding-top: 120px;
+        /* 👈 giảm cho vừa màn */
+    }
+}
 .letter-window.open {
     transform: scale(1);
     opacity: 1;
